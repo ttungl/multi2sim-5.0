@@ -1,0 +1,4 @@
+[ General ]
+	Frequency = 2000
+	Cores = 4
+	Threads = 0

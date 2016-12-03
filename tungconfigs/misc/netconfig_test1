@@ -1,0 +1,62 @@
+[ Network.mynet ]
+	DefaultInputBufferSize = 64
+	DefaultOutputBufferSize = 64
+	DefaultBandwidth = 1
+
+[ Network.mynet.Node.N1 ]
+	Type = EndNode
+
+[ Network.mynet.Node.N2 ]
+	Type = EndNode
+
+[ Network.mynet.Node.N3 ]
+	Type = EndNode
+
+[ Network.mynet.Node.N4 ]
+	Type = EndNode
+
+[ Network.mynet.Node.S1 ]
+	Type = Switch
+
+[ Network.mynet.Node.S2 ]
+	Type = Switch
+
+[ Network.mynet.Node.S3 ]
+	Type = Switch	
+
+[ Network.mynet.Link.N1-S1 ]
+	Type = Bidirectional
+	Bandwidth = 128
+	Source = N1
+	Dest = S1
+
+[ Network.mynet.Link.N2-S2 ]
+	Type = Bidirectional
+	Bandwidth = 128
+	Source = N2
+	Dest = S2
+
+[ Network.mynet.Link.S3-S1 ]
+	Type = Bidirectional
+	Bandwidth = 128
+	Source = S3
+	Dest = S1
+
+[ Network.mynet.Link.S3-S2 ]
+	Type = Bidirectional
+	Bandwidth = 128
+	Source = S3
+	Dest = S2
+
+[ Network.mynet.Link.S3-N3 ]
+	Type = Unidirectional
+	Bandwidth = 64
+	Source = S3
+	Dest = N3
+
+[ Network.mynet.Link.N4-S3 ]
+	Type = Unidirectional
+	Bandwidth = 64
+	Source = N4
+	Dest = S3
+

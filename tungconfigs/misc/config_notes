@@ -1,0 +1,126 @@
+############## CPU-CONFIG ##########
+[ General ]
+	Cores = 16
+	Threads = 1
+
+[ Pipeline ]
+	DecodeWidth = 4
+	DispatchWidth = 4
+	IssueWidth = 4
+	CommitWidth = 4
+
+[ Queues ]
+	FetchQueueSize = 64
+	RobSize = 128
+	IqSize = 51
+	LsqSize = 64
+	RfIntSize = 85
+	RfFpSize = 42
+
+[ FunctionalUnits ]
+	IntAdd.Count = 4
+	IntMult.Count = 1
+	IntDiv.Count = 1
+	EffAddr.Count = 4
+	Logic.Count = 4
+	FpSimple.Count = 4
+	FpAdd.Count = 4
+	FpMult.Count = 1
+	FpDiv.Count = 1
+	FpComplex.Count = 1
+
+[ BranchPredictor ]
+	Kind = Combined 
+	Bimod.Size = 4096
+	Choice.Size = 4096
+	TwoLevel.L1Size = 1024
+	TwoLevel.L2Size = 1
+	TwoLevel.HistorySize = 8
+	BTB.Sets = 1024
+	BTB.Assoc = 1
+
+
+############## MEMCONFIG ##########
+[Module mod-il1-0]
+	Type = Cache
+	Geometry = geo-i-l1
+	LowNetwork = net-l1-l2
+	LowNetworkNode = top0
+	LowModules = mod-l2-0 mod-l2-1 mod-l2-2 mod-l2-3 
+
+[Module mod-dl1-0]
+	Type = Cache
+	Geometry = geo-d-l1
+	LowNetwork = net-l1-l2
+	LowNetworkNode = topdata0
+	LowModules = mod-l2-0 mod-l2-1 mod-l2-2 mod-l2-3
+
+[Module mod-l2-0]
+	Type = Cache
+	Geometry = geo-l2
+	LowNetwork = net-l2-mm
+	LowModules = mod-mm0, mod-mm1, mod-mm2, mod-mm3
+	HighNetwork = net-l1-l2
+	HighNetworkNode = bottom0
+	AddressRange = ADDR DIV 64 MOD 16 EQ 0
+
+[Module mod-mm0]
+	Type = MainMemory
+	BlockSize = 64
+	Latency = 200
+	Ports = 1
+	HighNetwork = net-l2-mm
+	AddressRange = ADDR DIV 64 MOD 4 EQ 0
+
+[Network net-l2-mm]
+	DefaultInputBufferSize = 1152
+	DefaultOutputBufferSize = 1152
+	DefaultBandwidth = 72
+
+[Entry core-0]
+	Type = CPU
+	Core = 0
+	Thread = 0
+	DataModule = mod-dl1-0
+	InstModule = mod-il1-0
+
+[CacheGeometry geo-i-l1]
+	Sets = 512
+	Assoc = 1
+	BlockSize = 64
+	Latency = 1
+	Policy = LRU
+	Ports = 1	
+
+############## NETCONFIG ##########
+[Network.net-l1-l2]
+	DefaultInputBufferSize = 1152
+	DefaultOutputBufferSize = 1152
+	DefaultBandwidth = 128
+
+[Network.net-l1-l2.Node.sw0]
+	Type = Switch
+
+[Network.net-l1-l2.Node.top0]
+	Type = EndNode
+
+[Network.net-l1-l2.Link.sw0-top0]
+	Source = sw0
+	Dest = top0
+	Type = Bidirectional
+
+
+############## GPU-CONFIG ##########
+[Device]
+NumComputeUnits = 4
+
+###### run-benchmark-bash.sh #####
+/import/pathtoMulti2sim/m2s --cpu-sim detailed --report-cpu-pipeline pathto/pipeline.out --report-mem pathto/mem.out --cpu-config pathto/cpuconfig --net-config pathto/netconfig --mem-config pathto/memconfig --max-cpu-inst 1000 --report-net pathto/net.out /import/pathtobenchmarks/radix.i386 -m18 -p16 -n65536 -l4
+
+########## mcpat-bash.sh ##########
+/import/pathtoMcPat/mcpat -infile mcpat.xml -opt_for_clk 1 -print_level 5 > mcpat_output.txt
+
+###### change-mod #####
+chmod 777 pathtorunsh/run.sh
+chmod 777 pathtomcpat/mcpat.sh
+
