@@ -1,0 +1,5556 @@
+; Report for caches, TLBs, and main memory
+;    Accesses - Total number of accesses - Reads, Writes, and NCWrites (non-coherent) 
+;    Hits, Misses - Accesses resulting in hits/misses
+;    HitRatio - Hits divided by accesses
+;    Evictions - Invalidated or replaced cache blocks
+;    Retries - For L1 caches, accesses that were retried
+;    ReadRetries, WriteRetries, NCWriteRetries - Read/Write retried accesses
+;    Reads, Writes, NCWrites - Total read/write accesses
+;    BlockingReads, BlockingWrites, BlockingNCWrites - Reads/writes coming from lower-level cache
+;    NonBlockingReads, NonBlockingWrites, NonBlockingNCWrites - Coming from upper-level cache
+
+
+[ mod-cpu-dl1-0 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2914715
+CoalescedAccesses = 879349
+RetriedAccesses = 132906
+Evictions = 102447
+Hits = 2591217
+Misses = 323498
+HitRatio = 0.889
+
+Reads = 2085406
+CoalescedReads = 738537
+ReadHits = 1939948
+ReadMisses = 145458
+ReadRetries = 52491
+ReadRetryHits = 0
+ReadRetryMisses = 52491
+BlockingReads = 2085406
+NonBlockingReads = 0
+
+Writes = 763238
+CoalescedWrites = 140812
+WriteHits = 651269
+WriteMisses = 111969
+WriteRetries = 79999
+WriteRetryHits = 1609
+WriteRetryMisses = 78390
+BlockingWrites = 763238
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 16943
+RetryDirectoryEntryConflicts = 416
+ConflictInvalidation = 102487
+
+
+[ mod-cpu-dl1-1 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2775091
+CoalescedAccesses = 797887
+RetriedAccesses = 129956
+Evictions = 77338
+Hits = 2496399
+Misses = 278692
+HitRatio = 0.8996
+
+Reads = 1990769
+CoalescedReads = 680936
+ReadHits = 1870904
+ReadMisses = 119865
+ReadRetries = 50466
+ReadRetryHits = 0
+ReadRetryMisses = 50466
+BlockingReads = 1990769
+NonBlockingReads = 0
+
+Writes = 730796
+CoalescedWrites = 116951
+WriteHits = 625495
+WriteMisses = 105301
+WriteRetries = 79147
+WriteRetryHits = 1568
+WriteRetryMisses = 77579
+BlockingWrites = 730796
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 13929
+RetryDirectoryEntryConflicts = 343
+ConflictInvalidation = 77342
+
+
+[ mod-cpu-dl1-2 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2784148
+CoalescedAccesses = 816390
+RetriedAccesses = 131461
+Evictions = 97160
+Hits = 2468340
+Misses = 315808
+HitRatio = 0.8866
+
+Reads = 1982745
+CoalescedReads = 700119
+ReadHits = 1841593
+ReadMisses = 141152
+ReadRetries = 52154
+ReadRetryHits = 0
+ReadRetryMisses = 52154
+BlockingReads = 1982745
+NonBlockingReads = 0
+
+Writes = 735468
+CoalescedWrites = 116271
+WriteHits = 626747
+WriteMisses = 108721
+WriteRetries = 79015
+WriteRetryHits = 1448
+WriteRetryMisses = 77567
+BlockingWrites = 735468
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 17556
+RetryDirectoryEntryConflicts = 292
+ConflictInvalidation = 97164
+
+
+[ mod-cpu-dl1-3 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2795609
+CoalescedAccesses = 811182
+RetriedAccesses = 136081
+Evictions = 102187
+Hits = 2469706
+Misses = 325903
+HitRatio = 0.8834
+
+Reads = 1989522
+CoalescedReads = 695865
+ReadHits = 1842080
+ReadMisses = 147442
+ReadRetries = 53882
+ReadRetryHits = 0
+ReadRetryMisses = 53882
+BlockingReads = 1989522
+NonBlockingReads = 0
+
+Writes = 739410
+CoalescedWrites = 115317
+WriteHits = 627626
+WriteMisses = 111784
+WriteRetries = 81890
+WriteRetryHits = 1503
+WriteRetryMisses = 80387
+BlockingWrites = 739410
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 17023
+RetryDirectoryEntryConflicts = 309
+ConflictInvalidation = 102190
+
+
+[ mod-cpu-dl1-4 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2772031
+CoalescedAccesses = 805661
+RetriedAccesses = 124579
+Evictions = 80946
+Hits = 2492291
+Misses = 279740
+HitRatio = 0.8991
+
+Reads = 1981442
+CoalescedReads = 688708
+ReadHits = 1861582
+ReadMisses = 119860
+ReadRetries = 49124
+ReadRetryHits = 0
+ReadRetryMisses = 49124
+BlockingReads = 1981442
+NonBlockingReads = 0
+
+Writes = 734328
+CoalescedWrites = 116953
+WriteHits = 630709
+WriteMisses = 103619
+WriteRetries = 75151
+WriteRetryHits = 1396
+WriteRetryMisses = 73755
+BlockingWrites = 734328
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 17143
+RetryDirectoryEntryConflicts = 304
+ConflictInvalidation = 80946
+
+
+[ mod-cpu-dl1-5 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2792213
+CoalescedAccesses = 825930
+RetriedAccesses = 127874
+Evictions = 92735
+Hits = 2491493
+Misses = 300720
+HitRatio = 0.8923
+
+Reads = 2000445
+CoalescedReads = 707176
+ReadHits = 1864535
+ReadMisses = 135910
+ReadRetries = 51543
+ReadRetryHits = 0
+ReadRetryMisses = 51543
+BlockingReads = 2000445
+NonBlockingReads = 0
+
+Writes = 731751
+CoalescedWrites = 118754
+WriteHits = 626958
+WriteMisses = 104793
+WriteRetries = 76031
+WriteRetryHits = 1350
+WriteRetryMisses = 74681
+BlockingWrites = 731751
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 16914
+RetryDirectoryEntryConflicts = 300
+ConflictInvalidation = 92735
+
+
+[ mod-cpu-dl1-6 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2800362
+CoalescedAccesses = 813462
+RetriedAccesses = 116969
+Evictions = 88624
+Hits = 2505144
+Misses = 295218
+HitRatio = 0.8946
+
+Reads = 1999254
+CoalescedReads = 696672
+ReadHits = 1871408
+ReadMisses = 127846
+ReadRetries = 45916
+ReadRetryHits = 0
+ReadRetryMisses = 45916
+BlockingReads = 1999254
+NonBlockingReads = 0
+
+Writes = 732033
+CoalescedWrites = 116790
+WriteHits = 633736
+WriteMisses = 98297
+WriteRetries = 70767
+WriteRetryHits = 1447
+WriteRetryMisses = 69320
+BlockingWrites = 732033
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 17011
+RetryDirectoryEntryConflicts = 286
+ConflictInvalidation = 88625
+
+
+[ mod-cpu-dl1-7 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2793869
+CoalescedAccesses = 809118
+RetriedAccesses = 119878
+Evictions = 98877
+Hits = 2486711
+Misses = 307158
+HitRatio = 0.8901
+
+Reads = 1996581
+CoalescedReads = 692984
+ReadHits = 1857570
+ReadMisses = 139011
+ReadRetries = 47151
+ReadRetryHits = 0
+ReadRetryMisses = 47151
+BlockingReads = 1996581
+NonBlockingReads = 0
+
+Writes = 729782
+CoalescedWrites = 116134
+WriteHits = 629141
+WriteMisses = 100641
+WriteRetries = 72437
+WriteRetryHits = 1484
+WriteRetryMisses = 70953
+BlockingWrites = 729782
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 14769
+RetryDirectoryEntryConflicts = 290
+ConflictInvalidation = 98881
+
+
+[ mod-cpu-dl1-8 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2806229
+CoalescedAccesses = 813063
+RetriedAccesses = 131045
+Evictions = 84433
+Hits = 2512639
+Misses = 293590
+HitRatio = 0.8954
+
+Reads = 2006538
+CoalescedReads = 695655
+ReadHits = 1881166
+ReadMisses = 125372
+ReadRetries = 51571
+ReadRetryHits = 0
+ReadRetryMisses = 51571
+BlockingReads = 2006538
+NonBlockingReads = 0
+
+Writes = 740309
+CoalescedWrites = 117408
+WriteHits = 631473
+WriteMisses = 108836
+WriteRetries = 79179
+WriteRetryHits = 1466
+WriteRetryMisses = 77713
+BlockingWrites = 740309
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 16847
+RetryDirectoryEntryConflicts = 295
+ConflictInvalidation = 84433
+
+
+[ mod-cpu-dl1-9 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2806602
+CoalescedAccesses = 826160
+RetriedAccesses = 131948
+Evictions = 90546
+Hits = 2506331
+Misses = 300271
+HitRatio = 0.893
+
+Reads = 2012066
+CoalescedReads = 708602
+ReadHits = 1877649
+ReadMisses = 134417
+ReadRetries = 50443
+ReadRetryHits = 0
+ReadRetryMisses = 50443
+BlockingReads = 2012066
+NonBlockingReads = 0
+
+Writes = 737169
+CoalescedWrites = 117558
+WriteHits = 628682
+WriteMisses = 108487
+WriteRetries = 81232
+WriteRetryHits = 1334
+WriteRetryMisses = 79898
+BlockingWrites = 737169
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 14553
+RetryDirectoryEntryConflicts = 273
+ConflictInvalidation = 90547
+
+
+[ mod-cpu-dl1-10 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2815202
+CoalescedAccesses = 815522
+RetriedAccesses = 126968
+Evictions = 79116
+Hits = 2521237
+Misses = 293965
+HitRatio = 0.8956
+
+Reads = 2011871
+CoalescedReads = 699421
+ReadHits = 1888494
+ReadMisses = 123377
+ReadRetries = 49087
+ReadRetryHits = 0
+ReadRetryMisses = 49087
+BlockingReads = 2011871
+NonBlockingReads = 0
+
+Writes = 735981
+CoalescedWrites = 116101
+WriteHits = 632743
+WriteMisses = 103238
+WriteRetries = 77609
+WriteRetryHits = 1411
+WriteRetryMisses = 76198
+BlockingWrites = 735981
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 14434
+RetryDirectoryEntryConflicts = 272
+ConflictInvalidation = 79117
+
+
+[ mod-cpu-dl1-11 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2809982
+CoalescedAccesses = 833856
+RetriedAccesses = 130045
+Evictions = 108672
+Hits = 2478828
+Misses = 331154
+HitRatio = 0.8822
+
+Reads = 2003195
+CoalescedReads = 717323
+ReadHits = 1849484
+ReadMisses = 153711
+ReadRetries = 51574
+ReadRetryHits = 0
+ReadRetryMisses = 51574
+BlockingReads = 2003195
+NonBlockingReads = 0
+
+Writes = 737729
+CoalescedWrites = 116533
+WriteHits = 629344
+WriteMisses = 108385
+WriteRetries = 78194
+WriteRetryHits = 1410
+WriteRetryMisses = 76784
+BlockingWrites = 737729
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 16837
+RetryDirectoryEntryConflicts = 277
+ConflictInvalidation = 108675
+
+
+[ mod-cpu-dl1-12 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2794327
+CoalescedAccesses = 826778
+RetriedAccesses = 121651
+Evictions = 103389
+Hits = 2489190
+Misses = 305137
+HitRatio = 0.8908
+
+Reads = 2001058
+CoalescedReads = 707688
+ReadHits = 1859821
+ReadMisses = 141237
+ReadRetries = 47177
+ReadRetryHits = 0
+ReadRetryMisses = 47177
+BlockingReads = 2001058
+NonBlockingReads = 0
+
+Writes = 732618
+CoalescedWrites = 119090
+WriteHits = 629369
+WriteMisses = 103249
+WriteRetries = 74209
+WriteRetryHits = 1290
+WriteRetryMisses = 72919
+BlockingWrites = 732618
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 17789
+RetryDirectoryEntryConflicts = 265
+ConflictInvalidation = 103389
+
+
+[ mod-cpu-dl1-13 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2805911
+CoalescedAccesses = 843923
+RetriedAccesses = 126352
+Evictions = 113939
+Hits = 2489511
+Misses = 316400
+HitRatio = 0.8872
+
+Reads = 2010988
+CoalescedReads = 727223
+ReadHits = 1856940
+ReadMisses = 154048
+ReadRetries = 50236
+ReadRetryHits = 0
+ReadRetryMisses = 50236
+BlockingReads = 2010988
+NonBlockingReads = 0
+
+Writes = 737933
+CoalescedWrites = 116700
+WriteHits = 632571
+WriteMisses = 105362
+WriteRetries = 75807
+WriteRetryHits = 1361
+WriteRetryMisses = 74446
+BlockingWrites = 737933
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 17116
+RetryDirectoryEntryConflicts = 309
+ConflictInvalidation = 113940
+
+
+[ mod-cpu-dl1-14 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2839234
+CoalescedAccesses = 824336
+RetriedAccesses = 129074
+Evictions = 80570
+Hits = 2541701
+Misses = 297533
+HitRatio = 0.8952
+
+Reads = 2035698
+CoalescedReads = 709646
+ReadHits = 1909800
+ReadMisses = 125898
+ReadRetries = 51403
+ReadRetryHits = 0
+ReadRetryMisses = 51403
+BlockingReads = 2035698
+NonBlockingReads = 0
+
+Writes = 736023
+CoalescedWrites = 114690
+WriteHits = 631901
+WriteMisses = 104122
+WriteRetries = 77360
+WriteRetryHits = 1400
+WriteRetryMisses = 75960
+BlockingWrites = 736023
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 17177
+RetryDirectoryEntryConflicts = 311
+ConflictInvalidation = 80570
+
+
+[ mod-cpu-dl1-15 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 2864535
+CoalescedAccesses = 826082
+RetriedAccesses = 140082
+Evictions = 137310
+Hits = 2477343
+Misses = 387192
+HitRatio = 0.8648
+
+Reads = 2025274
+CoalescedReads = 709520
+ReadHits = 1847192
+ReadMisses = 178082
+ReadRetries = 53622
+ReadRetryHits = 0
+ReadRetryMisses = 53622
+BlockingReads = 2025274
+NonBlockingReads = 0
+
+Writes = 749535
+CoalescedWrites = 116562
+WriteHits = 630151
+WriteMisses = 119384
+WriteRetries = 86117
+WriteRetryHits = 1526
+WriteRetryMisses = 84591
+BlockingWrites = 749535
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 47531
+RetryDirectoryEntryConflicts = 343
+ConflictInvalidation = 137310
+
+
+[ mod-cpu-il1-0 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 755025
+CoalescedAccesses = 12580
+RetriedAccesses = 197
+Evictions = 5159
+Hits = 745809
+Misses = 9216
+HitRatio = 0.9878
+
+Reads = 752305
+CoalescedReads = 12580
+ReadHits = 745809
+ReadMisses = 6496
+ReadRetries = 197
+ReadRetryHits = 0
+ReadRetryMisses = 197
+BlockingReads = 752305
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 97
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 5159
+
+
+[ mod-cpu-il1-1 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 649510
+CoalescedAccesses = 9453
+RetriedAccesses = 521
+Evictions = 3146
+Hits = 643009
+Misses = 6501
+HitRatio = 0.99
+
+Reads = 647649
+CoalescedReads = 9453
+ReadHits = 643009
+ReadMisses = 4640
+ReadRetries = 520
+ReadRetryHits = 0
+ReadRetryMisses = 520
+BlockingReads = 647649
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 56
+RetryDirectoryEntryConflicts = 1
+ConflictInvalidation = 3146
+
+
+[ mod-cpu-il1-2 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 644672
+CoalescedAccesses = 9166
+RetriedAccesses = 678
+Evictions = 2818
+Hits = 638500
+Misses = 6172
+HitRatio = 0.9904
+
+Reads = 643029
+CoalescedReads = 9166
+ReadHits = 638500
+ReadMisses = 4529
+ReadRetries = 678
+ReadRetryHits = 0
+ReadRetryMisses = 678
+BlockingReads = 643029
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 42
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2818
+
+
+[ mod-cpu-il1-3 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 647596
+CoalescedAccesses = 9307
+RetriedAccesses = 749
+Evictions = 2820
+Hits = 641337
+Misses = 6259
+HitRatio = 0.9903
+
+Reads = 645936
+CoalescedReads = 9307
+ReadHits = 641337
+ReadMisses = 4599
+ReadRetries = 749
+ReadRetryHits = 0
+ReadRetryMisses = 749
+BlockingReads = 645936
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 49
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2820
+
+
+[ mod-cpu-il1-4 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 646305
+CoalescedAccesses = 9093
+RetriedAccesses = 411
+Evictions = 2967
+Hits = 640065
+Misses = 6240
+HitRatio = 0.9903
+
+Reads = 644538
+CoalescedReads = 9093
+ReadHits = 640065
+ReadMisses = 4473
+ReadRetries = 411
+ReadRetryHits = 0
+ReadRetryMisses = 411
+BlockingReads = 644538
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 55
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2967
+
+
+[ mod-cpu-il1-5 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 670314
+CoalescedAccesses = 9881
+RetriedAccesses = 282
+Evictions = 2480
+Hits = 665187
+Misses = 5127
+HitRatio = 0.9924
+
+Reads = 668933
+CoalescedReads = 9881
+ReadHits = 665187
+ReadMisses = 3746
+ReadRetries = 282
+ReadRetryHits = 0
+ReadRetryMisses = 282
+BlockingReads = 668933
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 35
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2480
+
+
+[ mod-cpu-il1-6 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 653483
+CoalescedAccesses = 9580
+RetriedAccesses = 927
+Evictions = 2292
+Hits = 647941
+Misses = 5542
+HitRatio = 0.9915
+
+Reads = 652076
+CoalescedReads = 9580
+ReadHits = 647941
+ReadMisses = 4135
+ReadRetries = 927
+ReadRetryHits = 0
+ReadRetryMisses = 927
+BlockingReads = 652076
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 35
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2292
+
+
+[ mod-cpu-il1-7 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 657952
+CoalescedAccesses = 9301
+RetriedAccesses = 519
+Evictions = 2287
+Hits = 652859
+Misses = 5093
+HitRatio = 0.9923
+
+Reads = 656581
+CoalescedReads = 9301
+ReadHits = 652859
+ReadMisses = 3722
+ReadRetries = 519
+ReadRetryHits = 0
+ReadRetryMisses = 519
+BlockingReads = 656581
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 36
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2287
+
+
+[ mod-cpu-il1-8 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 663389
+CoalescedAccesses = 9155
+RetriedAccesses = 666
+Evictions = 2581
+Hits = 657387
+Misses = 6002
+HitRatio = 0.991
+
+Reads = 661678
+CoalescedReads = 9155
+ReadHits = 657387
+ReadMisses = 4291
+ReadRetries = 665
+ReadRetryHits = 0
+ReadRetryMisses = 665
+BlockingReads = 661678
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 60
+RetryDirectoryEntryConflicts = 1
+ConflictInvalidation = 2581
+
+
+[ mod-cpu-il1-9 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 669925
+CoalescedAccesses = 9684
+RetriedAccesses = 670
+Evictions = 2506
+Hits = 663955
+Misses = 5970
+HitRatio = 0.9911
+
+Reads = 668209
+CoalescedReads = 9684
+ReadHits = 663955
+ReadMisses = 4254
+ReadRetries = 670
+ReadRetryHits = 0
+ReadRetryMisses = 670
+BlockingReads = 668209
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 37
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2506
+
+
+[ mod-cpu-il1-10 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 661201
+CoalescedAccesses = 9015
+RetriedAccesses = 502
+Evictions = 2198
+Hits = 655909
+Misses = 5292
+HitRatio = 0.992
+
+Reads = 659717
+CoalescedReads = 9015
+ReadHits = 655909
+ReadMisses = 3808
+ReadRetries = 502
+ReadRetryHits = 0
+ReadRetryMisses = 502
+BlockingReads = 659717
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 34
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2198
+
+
+[ mod-cpu-il1-11 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 673826
+CoalescedAccesses = 9126
+RetriedAccesses = 1111
+Evictions = 2559
+Hits = 667536
+Misses = 6290
+HitRatio = 0.9907
+
+Reads = 672318
+CoalescedReads = 9126
+ReadHits = 667536
+ReadMisses = 4782
+ReadRetries = 1111
+ReadRetryHits = 0
+ReadRetryMisses = 1111
+BlockingReads = 672318
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 32
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2559
+
+
+[ mod-cpu-il1-12 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 665624
+CoalescedAccesses = 9137
+RetriedAccesses = 254
+Evictions = 2666
+Hits = 660461
+Misses = 5163
+HitRatio = 0.9922
+
+Reads = 664194
+CoalescedReads = 9137
+ReadHits = 660461
+ReadMisses = 3733
+ReadRetries = 254
+ReadRetryHits = 0
+ReadRetryMisses = 254
+BlockingReads = 664194
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 57
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 2666
+
+
+[ mod-cpu-il1-13 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 678362
+CoalescedAccesses = 10216
+RetriedAccesses = 234
+Evictions = 3392
+Hits = 672258
+Misses = 6104
+HitRatio = 0.991
+
+Reads = 676730
+CoalescedReads = 10216
+ReadHits = 672258
+ReadMisses = 4472
+ReadRetries = 234
+ReadRetryHits = 0
+ReadRetryMisses = 234
+BlockingReads = 676730
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 25
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 3392
+
+
+[ mod-cpu-il1-14 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 681019
+CoalescedAccesses = 10409
+RetriedAccesses = 673
+Evictions = 3108
+Hits = 674327
+Misses = 6692
+HitRatio = 0.9902
+
+Reads = 679176
+CoalescedReads = 10409
+ReadHits = 674327
+ReadMisses = 4849
+ReadRetries = 673
+ReadRetryHits = 0
+ReadRetryMisses = 673
+BlockingReads = 679176
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 16
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 3108
+
+
+[ mod-cpu-il1-15 ]
+
+Sets = 512
+Ways = 1
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 1
+Ports = 2
+
+Accesses = 671394
+CoalescedAccesses = 10262
+RetriedAccesses = 620
+Evictions = 3667
+Hits = 664084
+Misses = 7310
+HitRatio = 0.9891
+
+Reads = 669417
+CoalescedReads = 10262
+ReadHits = 664084
+ReadMisses = 5333
+ReadRetries = 620
+ReadRetryHits = 0
+ReadRetryMisses = 620
+BlockingReads = 669417
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 58
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 3667
+
+
+[ mod-gpu-l1-0 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l1-1 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l1-2 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l1-3 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l1-4 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l1-5 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l1-6 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l1-7 ]
+
+Sets = 256
+Ways = 4
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 22
+Ports = 2
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-cpu-l2-0 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 705966
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 23563
+Hits = 180872
+Misses = 525094
+HitRatio = 0.2562
+
+Reads = 214893
+CoalescedReads = 0
+ReadHits = 124728
+ReadMisses = 90165
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 214893
+
+Writes = 146584
+CoalescedWrites = 0
+WriteHits = 56144
+WriteMisses = 90440
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 146584
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 183283
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 23563
+
+
+[ mod-cpu-l2-1 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 729968
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 17263
+Hits = 214159
+Misses = 515809
+HitRatio = 0.2934
+
+Reads = 233450
+CoalescedReads = 0
+ReadHits = 151252
+ReadMisses = 82198
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 233450
+
+Writes = 152220
+CoalescedWrites = 0
+WriteHits = 62907
+WriteMisses = 89313
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 152220
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 184774
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 17263
+
+
+[ mod-cpu-l2-2 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 664766
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 18471
+Hits = 178177
+Misses = 486589
+HitRatio = 0.268
+
+Reads = 210503
+CoalescedReads = 0
+ReadHits = 121236
+ReadMisses = 89267
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 210503
+
+Writes = 152071
+CoalescedWrites = 0
+WriteHits = 56941
+WriteMisses = 95130
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 152071
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 158637
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 18471
+
+
+[ mod-cpu-l2-3 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 677157
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 20349
+Hits = 196863
+Misses = 480294
+HitRatio = 0.2907
+
+Reads = 223533
+CoalescedReads = 0
+ReadHits = 136239
+ReadMisses = 87294
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 223533
+
+Writes = 150670
+CoalescedWrites = 0
+WriteHits = 60624
+WriteMisses = 90046
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 150670
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 153872
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 20349
+
+
+[ mod-cpu-l2-4 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 688213
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 19215
+Hits = 177909
+Misses = 510304
+HitRatio = 0.2585
+
+Reads = 207396
+CoalescedReads = 0
+ReadHits = 120433
+ReadMisses = 86963
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 207396
+
+Writes = 146970
+CoalescedWrites = 0
+WriteHits = 57476
+WriteMisses = 89494
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 146970
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 180532
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 19215
+
+
+[ mod-cpu-l2-5 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 696799
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 19929
+Hits = 199542
+Misses = 497257
+HitRatio = 0.2864
+
+Reads = 229524
+CoalescedReads = 0
+ReadHits = 138683
+ReadMisses = 90841
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 229524
+
+Writes = 157728
+CoalescedWrites = 0
+WriteHits = 60859
+WriteMisses = 96869
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 157728
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 164381
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 19929
+
+
+[ mod-cpu-l2-6 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 724674
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 18361
+Hits = 221008
+Misses = 503666
+HitRatio = 0.305
+
+Reads = 256240
+CoalescedReads = 0
+ReadHits = 162667
+ReadMisses = 93573
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 256240
+
+Writes = 157430
+CoalescedWrites = 0
+WriteHits = 58341
+WriteMisses = 99089
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 157430
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 146995
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 18361
+
+
+[ mod-cpu-l2-7 ]
+
+Sets = 1024
+Ways = 8
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 4
+Ports = 4
+
+Accesses = 747618
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 21698
+Hits = 221840
+Misses = 525778
+HitRatio = 0.2967
+
+Reads = 257017
+CoalescedReads = 0
+ReadHits = 161363
+ReadMisses = 95654
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 257017
+
+Writes = 159876
+CoalescedWrites = 0
+WriteHits = 60477
+WriteMisses = 99399
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 159876
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 172966
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 21699
+
+
+[ mod-gpu-l2-0 ]
+
+Sets = 512
+Ways = 16
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 63
+Ports = 4
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l2-1 ]
+
+Sets = 512
+Ways = 16
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 63
+Ports = 4
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l2-2 ]
+
+Sets = 512
+Ways = 16
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 63
+Ports = 4
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-gpu-l2-3 ]
+
+Sets = 512
+Ways = 16
+ReplacementPolicy = LRU
+WritePolicy = WriteBack
+BlockSize = 64
+DataLatency = 63
+Ports = 4
+
+Accesses = 0
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 0
+Misses = 0
+HitRatio = 0
+
+Reads = 0
+CoalescedReads = 0
+ReadHits = 0
+ReadMisses = 0
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 0
+
+Writes = 0
+CoalescedWrites = 0
+WriteHits = 0
+WriteMisses = 0
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 0
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 0
+RetryDirectoryEntryConflicts = 0
+ConflictInvalidation = 0
+
+
+[ mod-mm-0 ]
+
+BlockSize = 64
+DataLatency = 100
+Ports = 1
+
+Accesses = 154794
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 106904
+Misses = 47890
+HitRatio = 0.6906
+
+Reads = 58397
+CoalescedReads = 0
+ReadHits = 57205
+ReadMisses = 1192
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 58397
+
+Writes = 65386
+CoalescedWrites = 0
+WriteHits = 49699
+WriteMisses = 15687
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 65386
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 4870
+RetryDirectoryEntryConflicts = 0
+
+
+[ mod-mm-1 ]
+
+BlockSize = 64
+DataLatency = 100
+Ports = 1
+
+Accesses = 155693
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 108267
+Misses = 47426
+HitRatio = 0.6954
+
+Reads = 59267
+CoalescedReads = 0
+ReadHits = 58091
+ReadMisses = 1176
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 59267
+
+Writes = 65902
+CoalescedWrites = 0
+WriteHits = 50176
+WriteMisses = 15726
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 65902
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 4202
+RetryDirectoryEntryConflicts = 0
+
+
+[ mod-mm-2 ]
+
+BlockSize = 64
+DataLatency = 100
+Ports = 1
+
+Accesses = 1152908
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 292414
+Misses = 860494
+HitRatio = 0.2536
+
+Reads = 129299
+CoalescedReads = 0
+ReadHits = 128116
+ReadMisses = 1183
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 129299
+
+Writes = 180010
+CoalescedWrites = 0
+WriteHits = 164298
+WriteMisses = 15712
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 180010
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 816702
+RetryDirectoryEntryConflicts = 0
+
+
+[ mod-mm-3 ]
+
+BlockSize = 64
+DataLatency = 100
+Ports = 1
+
+Accesses = 329026
+CoalescedAccesses = 0
+RetriedAccesses = 0
+Evictions = 0
+Hits = 198713
+Misses = 130313
+HitRatio = 0.6039
+
+Reads = 104132
+CoalescedReads = 0
+ReadHits = 102972
+ReadMisses = 1160
+ReadRetries = 0
+ReadRetryHits = 0
+ReadRetryMisses = 0
+BlockingReads = 0
+NonBlockingReads = 104132
+
+Writes = 111470
+CoalescedWrites = 0
+WriteHits = 95741
+WriteMisses = 15729
+WriteRetries = 0
+WriteRetryHits = 0
+WriteRetryMisses = 0
+BlockingWrites = 0
+NonBlockingWrites = 111470
+
+NCWrites = 0
+CoalescedNCWrites = 0
+NCWriteHits = 0
+NCWriteMisses = 0
+NCWriteRetries = 0
+NCWriteRetryHits = 0
+NCWriteRetryMisses = 0
+BlockingNCWrites = 0
+NonBlockingNCWrites = 0
+
+DirectoryEntryConflicts = 86570
+RetryDirectoryEntryConflicts = 0
+
+
+[ Network.net-cpu-l1-l2-0 ]
+Transfers = 1385018
+AverageMessageSize = 25.15
+TransferredBytes = 34828368
+AverageLatency = 4.0056
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-0.Link.link_mod-cpu-dl1-0_Switch ]
+Name = Switch<->mod-cpu-dl1-0
+SourceBuffers = mod-cpu-dl1-0:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 366447
+TransferredBytes = 7027256
+BusyCycles = 366447
+BytesPerCycle = 0.2175
+Utilization = 0.0030
+
+[ Network.net-cpu-l1-l2-0.Link.link_Switch_mod-cpu-dl1-0 ]
+Name = Switch<->mod-cpu-dl1-0
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-0:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 366447
+TransferredBytes = 11817976
+BusyCycles = 366447
+BytesPerCycle = 0.3658
+Utilization = 0.0051
+
+[ Network.net-cpu-l1-l2-0.Link.link_mod-cpu-dl1-1_Switch ]
+Name = Switch<->mod-cpu-dl1-1
+SourceBuffers = mod-cpu-dl1-1:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 310498
+TransferredBytes = 5707216
+BusyCycles = 310498
+BytesPerCycle = 0.1767
+Utilization = 0.0025
+
+[ Network.net-cpu-l1-l2-0.Link.link_Switch_mod-cpu-dl1-1 ]
+Name = Switch<->mod-cpu-dl1-1
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-1:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 310498
+TransferredBytes = 9360080
+BusyCycles = 310498
+BytesPerCycle = 0.2897
+Utilization = 0.0040
+
+[ Network.net-cpu-l1-l2-0.Link.link_mod-cpu-il1-0_Switch ]
+Name = Switch<->mod-cpu-il1-0
+SourceBuffers = mod-cpu-il1-0:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 9119
+TransferredBytes = 72952
+BusyCycles = 9119
+BytesPerCycle = 0.0023
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-0.Link.link_Switch_mod-cpu-il1-0 ]
+Name = Switch<->mod-cpu-il1-0
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-0:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 9119
+TransferredBytes = 476088
+BusyCycles = 9119
+BytesPerCycle = 0.0147
+Utilization = 0.0002
+
+[ Network.net-cpu-l1-l2-0.Link.link_mod-cpu-il1-1_Switch ]
+Name = Switch<->mod-cpu-il1-1
+SourceBuffers = mod-cpu-il1-1:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 6445
+TransferredBytes = 51560
+BusyCycles = 6445
+BytesPerCycle = 0.0016
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-0.Link.link_Switch_mod-cpu-il1-1 ]
+Name = Switch<->mod-cpu-il1-1
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-1:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 6445
+TransferredBytes = 315240
+BusyCycles = 6445
+BytesPerCycle = 0.0098
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-0.Link.link_mod-cpu-l2-0_Switch ]
+Name = Switch<->mod-cpu-l2-0
+SourceBuffers = mod-cpu-l2-0:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 692509
+TransferredBytes = 21969384
+BusyCycles = 692509
+BytesPerCycle = 0.6800
+Utilization = 0.0094
+
+[ Network.net-cpu-l1-l2-0.Link.link_Switch_mod-cpu-l2-0 ]
+Name = Switch<->mod-cpu-l2-0
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-0:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 692509
+TransferredBytes = 12858984
+BusyCycles = 692509
+BytesPerCycle = 0.3980
+Utilization = 0.0055
+
+[ Network.net-cpu-l1-l2-0.Node.mod-cpu-dl1-0 ]
+SentBytes = 7027256
+SentPackets = 366447
+SendRate = 0.2175
+ReceivedBytes = 11817976
+ReceivedPackets = 366447
+ReceiveRate = 0.3658
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 31.89
+in_buf_0.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 17.52
+out_buf_0.Utilization = 0.02
+
+[ Network.net-cpu-l1-l2-0.Node.mod-cpu-dl1-1 ]
+SentBytes = 5707216
+SentPackets = 310498
+SendRate = 0.1767
+ReceivedBytes = 9360080
+ReceivedPackets = 310498
+ReceiveRate = 0.2897
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.69
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 17.41
+out_buf_0.Utilization = 0.02
+
+[ Network.net-cpu-l1-l2-0.Node.mod-cpu-il1-0 ]
+SentBytes = 72952
+SentPackets = 9119
+SendRate = 0.0023
+ReceivedBytes = 476088
+ReceivedPackets = 9119
+ReceiveRate = 0.0147
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.15
+in_buf_0.ByteOccupancy = 70.48
+in_buf_0.Utilization = 0.06
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 8.00
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-0.Node.mod-cpu-il1-1 ]
+SentBytes = 51560
+SentPackets = 6445
+SendRate = 0.0016
+ReceivedBytes = 315240
+ReceivedPackets = 6445
+ReceiveRate = 0.0098
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.09
+in_buf_0.ByteOccupancy = 61.95
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-0.Node.mod-cpu-l2-0 ]
+SentBytes = 21969384
+SentPackets = 692509
+SendRate = 0.6800
+ReceivedBytes = 12858984
+ReceivedPackets = 692509
+ReceiveRate = 0.3980
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.10
+in_buf_0.ByteOccupancy = 20.62
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 32.72
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-0.Node.Switch ]
+Bandwidth = 72
+SentBytes = 34828368
+SentPackets = 1385018
+SendRate = 1.0781
+ReceivedBytes = 34828368
+ReceivedPackets = 1385018
+ReceiveRate = 1.0781
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 17.52
+in_buf_0.Utilization = 0.02
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 17.41
+in_buf_1.Utilization = 0.02
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 8.00
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.90
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 32.72
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 31.16
+out_buf_0.Utilization = 0.03
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 27.25
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 59.92
+out_buf_2.Utilization = 0.05
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 55.51
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 17.27
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-cpu-l1-l2-1 ]
+Transfers = 1473656
+AverageMessageSize = 25.45
+TransferredBytes = 37508160
+AverageLatency = 4.0064
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-1.Link.link_mod-cpu-dl1-2_Switch ]
+Name = Switch<->mod-cpu-dl1-2
+SourceBuffers = mod-cpu-dl1-2:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 355636
+TransferredBytes = 6726368
+BusyCycles = 355636
+BytesPerCycle = 0.2082
+Utilization = 0.0029
+
+[ Network.net-cpu-l1-l2-1.Link.link_Switch_mod-cpu-dl1-2 ]
+Name = Switch<->mod-cpu-dl1-2
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-2:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 355636
+TransferredBytes = 11340512
+BusyCycles = 355636
+BytesPerCycle = 0.3510
+Utilization = 0.0049
+
+[ Network.net-cpu-l1-l2-1.Link.link_mod-cpu-dl1-3_Switch ]
+Name = Switch<->mod-cpu-dl1-3
+SourceBuffers = mod-cpu-dl1-3:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 368852
+TransferredBytes = 7023136
+BusyCycles = 368852
+BytesPerCycle = 0.2174
+Utilization = 0.0030
+
+[ Network.net-cpu-l1-l2-1.Link.link_Switch_mod-cpu-dl1-3 ]
+Name = Switch<->mod-cpu-dl1-3
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-3:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 368852
+TransferredBytes = 11727840
+BusyCycles = 368852
+BytesPerCycle = 0.3630
+Utilization = 0.0050
+
+[ Network.net-cpu-l1-l2-1.Link.link_mod-cpu-il1-2_Switch ]
+Name = Switch<->mod-cpu-il1-2
+SourceBuffers = mod-cpu-il1-2:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 6130
+TransferredBytes = 49040
+BusyCycles = 6130
+BytesPerCycle = 0.0015
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-1.Link.link_Switch_mod-cpu-il1-2 ]
+Name = Switch<->mod-cpu-il1-2
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-2:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 6130
+TransferredBytes = 295504
+BusyCycles = 6130
+BytesPerCycle = 0.0091
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-1.Link.link_mod-cpu-il1-3_Switch ]
+Name = Switch<->mod-cpu-il1-3
+SourceBuffers = mod-cpu-il1-3:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 6210
+TransferredBytes = 49680
+BusyCycles = 6210
+BytesPerCycle = 0.0015
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-1.Link.link_Switch_mod-cpu-il1-3 ]
+Name = Switch<->mod-cpu-il1-3
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-3:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 6210
+TransferredBytes = 296080
+BusyCycles = 6210
+BytesPerCycle = 0.0092
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-1.Link.link_mod-cpu-l2-1_Switch ]
+Name = Switch<->mod-cpu-l2-1
+SourceBuffers = mod-cpu-l2-1:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 736828
+TransferredBytes = 23659936
+BusyCycles = 736828
+BytesPerCycle = 0.7324
+Utilization = 0.0102
+
+[ Network.net-cpu-l1-l2-1.Link.link_Switch_mod-cpu-l2-1 ]
+Name = Switch<->mod-cpu-l2-1
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-1:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 736828
+TransferredBytes = 13848224
+BusyCycles = 736828
+BytesPerCycle = 0.4287
+Utilization = 0.0060
+
+[ Network.net-cpu-l1-l2-1.Node.mod-cpu-dl1-2 ]
+SentBytes = 6726368
+SentPackets = 355636
+SendRate = 0.2082
+ReceivedBytes = 11340512
+ReceivedPackets = 355636
+ReceiveRate = 0.3510
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 26.67
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.44
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-1.Node.mod-cpu-dl1-3 ]
+SentBytes = 7023136
+SentPackets = 368852
+SendRate = 0.2174
+ReceivedBytes = 11727840
+ReceivedPackets = 368852
+ReceiveRate = 0.3630
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.00
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.40
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-1.Node.mod-cpu-il1-2 ]
+SentBytes = 49040
+SentPackets = 6130
+SendRate = 0.0015
+ReceivedBytes = 295504
+ReceivedPackets = 6130
+ReceiveRate = 0.0091
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.03
+in_buf_0.ByteOccupancy = 62.13
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-1.Node.mod-cpu-il1-3 ]
+SentBytes = 49680
+SentPackets = 6210
+SendRate = 0.0015
+ReceivedBytes = 296080
+ReceivedPackets = 6210
+ReceiveRate = 0.0092
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.05
+in_buf_0.ByteOccupancy = 63.13
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-1.Node.mod-cpu-l2-1 ]
+SentBytes = 23659936
+SentPackets = 736828
+SendRate = 0.7324
+ReceivedBytes = 13848224
+ReceivedPackets = 736828
+ReceiveRate = 0.4287
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.11
+in_buf_0.ByteOccupancy = 19.25
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 29.50
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-1.Node.Switch ]
+Bandwidth = 72
+SentBytes = 37508160
+SentPackets = 1473656
+SendRate = 1.1610
+ReceivedBytes = 37508160
+ReceivedPackets = 1473656
+ReceiveRate = 1.1610
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 16.45
+in_buf_0.Utilization = 0.01
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 16.40
+in_buf_1.Utilization = 0.01
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 7.90
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.90
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 29.50
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 26.10
+out_buf_0.Utilization = 0.02
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 26.41
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 60.03
+out_buf_2.Utilization = 0.05
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 59.52
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 16.16
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-cpu-l1-l2-2 ]
+Transfers = 1305826
+AverageMessageSize = 25.12
+TransferredBytes = 32801232
+AverageLatency = 4.0058
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-2.Link.link_mod-cpu-dl1-4_Switch ]
+Name = Switch<->mod-cpu-dl1-4
+SourceBuffers = mod-cpu-dl1-4:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 309775
+TransferredBytes = 5781752
+BusyCycles = 309775
+BytesPerCycle = 0.1790
+Utilization = 0.0025
+
+[ Network.net-cpu-l1-l2-2.Link.link_Switch_mod-cpu-dl1-4 ]
+Name = Switch<->mod-cpu-dl1-4
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-4:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 309775
+TransferredBytes = 9571640
+BusyCycles = 309775
+BytesPerCycle = 0.2963
+Utilization = 0.0041
+
+[ Network.net-cpu-l1-l2-2.Link.link_mod-cpu-dl1-5_Switch ]
+Name = Switch<->mod-cpu-dl1-5
+SourceBuffers = mod-cpu-dl1-5:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 331861
+TransferredBytes = 6070184
+BusyCycles = 331861
+BytesPerCycle = 0.1879
+Utilization = 0.0026
+
+[ Network.net-cpu-l1-l2-2.Link.link_Switch_mod-cpu-dl1-5 ]
+Name = Switch<->mod-cpu-dl1-5
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-5:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 331861
+TransferredBytes = 10715560
+BusyCycles = 331861
+BytesPerCycle = 0.3317
+Utilization = 0.0046
+
+[ Network.net-cpu-l1-l2-2.Link.link_mod-cpu-il1-4_Switch ]
+Name = Switch<->mod-cpu-il1-4
+SourceBuffers = mod-cpu-il1-4:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 6185
+TransferredBytes = 49480
+BusyCycles = 6185
+BytesPerCycle = 0.0015
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-2.Link.link_Switch_mod-cpu-il1-4 ]
+Name = Switch<->mod-cpu-il1-4
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-4:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 6185
+TransferredBytes = 309448
+BusyCycles = 6185
+BytesPerCycle = 0.0096
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-2.Link.link_mod-cpu-il1-5_Switch ]
+Name = Switch<->mod-cpu-il1-5
+SourceBuffers = mod-cpu-il1-5:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 5092
+TransferredBytes = 40736
+BusyCycles = 5092
+BytesPerCycle = 0.0013
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-2.Link.link_Switch_mod-cpu-il1-5 ]
+Name = Switch<->mod-cpu-il1-5
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-5:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 5092
+TransferredBytes = 262432
+BusyCycles = 5092
+BytesPerCycle = 0.0081
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-2.Link.link_mod-cpu-l2-2_Switch ]
+Name = Switch<->mod-cpu-l2-2
+SourceBuffers = mod-cpu-l2-2:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 652913
+TransferredBytes = 20859080
+BusyCycles = 652913
+BytesPerCycle = 0.6457
+Utilization = 0.0090
+
+[ Network.net-cpu-l1-l2-2.Link.link_Switch_mod-cpu-l2-2 ]
+Name = Switch<->mod-cpu-l2-2
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-2:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 652913
+TransferredBytes = 11942152
+BusyCycles = 652913
+BytesPerCycle = 0.3697
+Utilization = 0.0051
+
+[ Network.net-cpu-l1-l2-2.Node.mod-cpu-dl1-4 ]
+SentBytes = 5781752
+SentPackets = 309775
+SendRate = 0.1790
+ReceivedBytes = 9571640
+ReceivedPackets = 309775
+ReceiveRate = 0.2963
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 26.53
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.82
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-2.Node.mod-cpu-dl1-5 ]
+SentBytes = 6070184
+SentPackets = 331861
+SendRate = 0.1879
+ReceivedBytes = 10715560
+ReceivedPackets = 331861
+ReceiveRate = 0.3317
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.73
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.91
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-2.Node.mod-cpu-il1-4 ]
+SentBytes = 49480
+SentPackets = 6185
+SendRate = 0.0015
+ReceivedBytes = 309448
+ReceivedPackets = 6185
+ReceiveRate = 0.0096
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.04
+in_buf_0.ByteOccupancy = 53.64
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-2.Node.mod-cpu-il1-5 ]
+SentBytes = 40736
+SentPackets = 5092
+SendRate = 0.0013
+ReceivedBytes = 262432
+ReceivedPackets = 5092
+ReceiveRate = 0.0081
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.03
+in_buf_0.ByteOccupancy = 59.82
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-2.Node.mod-cpu-l2-2 ]
+SentBytes = 20859080
+SentPackets = 652913
+SendRate = 0.6457
+ReceivedBytes = 11942152
+ReceivedPackets = 652913
+ReceiveRate = 0.3697
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.10
+in_buf_0.ByteOccupancy = 19.52
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 30.05
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-2.Node.Switch ]
+Bandwidth = 72
+SentBytes = 32801232
+SentPackets = 1305826
+SendRate = 1.0153
+ReceivedBytes = 32801232
+ReceivedPackets = 1305826
+ReceiveRate = 1.0153
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 16.82
+in_buf_0.Utilization = 0.01
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 16.92
+in_buf_1.Utilization = 0.01
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 7.90
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.90
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 30.05
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 25.97
+out_buf_0.Utilization = 0.02
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 27.16
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 51.26
+out_buf_2.Utilization = 0.04
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 57.37
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 16.47
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-cpu-l1-l2-3 ]
+Transfers = 1368882
+AverageMessageSize = 25.68
+TransferredBytes = 35149968
+AverageLatency = 4.0058
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-3.Link.link_mod-cpu-dl1-6_Switch ]
+Name = Switch<->mod-cpu-dl1-6
+SourceBuffers = mod-cpu-dl1-6:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 325348
+TransferredBytes = 5895968
+BusyCycles = 325348
+BytesPerCycle = 0.1825
+Utilization = 0.0025
+
+[ Network.net-cpu-l1-l2-3.Link.link_Switch_mod-cpu-dl1-6 ]
+Name = Switch<->mod-cpu-dl1-6
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-6:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 325348
+TransferredBytes = 10596128
+BusyCycles = 325348
+BytesPerCycle = 0.3280
+Utilization = 0.0046
+
+[ Network.net-cpu-l1-l2-3.Link.link_mod-cpu-dl1-7_Switch ]
+Name = Switch<->mod-cpu-dl1-7
+SourceBuffers = mod-cpu-dl1-7:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 348529
+TransferredBytes = 6661640
+BusyCycles = 348529
+BytesPerCycle = 0.2062
+Utilization = 0.0029
+
+[ Network.net-cpu-l1-l2-3.Link.link_Switch_mod-cpu-dl1-7 ]
+Name = Switch<->mod-cpu-dl1-7
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-7:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 348529
+TransferredBytes = 11416904
+BusyCycles = 348529
+BytesPerCycle = 0.3534
+Utilization = 0.0049
+
+[ Network.net-cpu-l1-l2-3.Link.link_mod-cpu-il1-6_Switch ]
+Name = Switch<->mod-cpu-il1-6
+SourceBuffers = mod-cpu-il1-6:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 5507
+TransferredBytes = 44056
+BusyCycles = 5507
+BytesPerCycle = 0.0014
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-3.Link.link_Switch_mod-cpu-il1-6 ]
+Name = Switch<->mod-cpu-il1-6
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-6:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 5507
+TransferredBytes = 249368
+BusyCycles = 5507
+BytesPerCycle = 0.0077
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-3.Link.link_mod-cpu-il1-7_Switch ]
+Name = Switch<->mod-cpu-il1-7
+SourceBuffers = mod-cpu-il1-7:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 5057
+TransferredBytes = 40456
+BusyCycles = 5057
+BytesPerCycle = 0.0013
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-3.Link.link_Switch_mod-cpu-il1-7 ]
+Name = Switch<->mod-cpu-il1-7
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-7:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 5057
+TransferredBytes = 245448
+BusyCycles = 5057
+BytesPerCycle = 0.0076
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-3.Link.link_mod-cpu-l2-3_Switch ]
+Name = Switch<->mod-cpu-l2-3
+SourceBuffers = mod-cpu-l2-3:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 684441
+TransferredBytes = 22507848
+BusyCycles = 684441
+BytesPerCycle = 0.6967
+Utilization = 0.0097
+
+[ Network.net-cpu-l1-l2-3.Link.link_Switch_mod-cpu-l2-3 ]
+Name = Switch<->mod-cpu-l2-3
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-3:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 684441
+TransferredBytes = 12642120
+BusyCycles = 684441
+BytesPerCycle = 0.3913
+Utilization = 0.0054
+
+[ Network.net-cpu-l1-l2-3.Node.mod-cpu-dl1-6 ]
+SentBytes = 5895968
+SentPackets = 325348
+SendRate = 0.1825
+ReceivedBytes = 10596128
+ReceivedPackets = 325348
+ReceiveRate = 0.3280
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.44
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.96
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-3.Node.mod-cpu-dl1-7 ]
+SentBytes = 6661640
+SentPackets = 348529
+SendRate = 0.2062
+ReceivedBytes = 11416904
+ReceivedPackets = 348529
+ReceiveRate = 0.3534
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 28.09
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.98
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-3.Node.mod-cpu-il1-6 ]
+SentBytes = 44056
+SentPackets = 5507
+SendRate = 0.0014
+ReceivedBytes = 249368
+ReceivedPackets = 5507
+ReceiveRate = 0.0077
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.04
+in_buf_0.ByteOccupancy = 61.40
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-3.Node.mod-cpu-il1-7 ]
+SentBytes = 40456
+SentPackets = 5057
+SendRate = 0.0013
+ReceivedBytes = 245448
+ReceivedPackets = 5057
+ReceiveRate = 0.0076
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.05
+in_buf_0.ByteOccupancy = 64.97
+in_buf_0.Utilization = 0.06
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-3.Node.mod-cpu-l2-3 ]
+SentBytes = 22507848
+SentPackets = 684441
+SendRate = 0.6967
+ReceivedBytes = 12642120
+ReceivedPackets = 684441
+ReceiveRate = 0.3913
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.11
+in_buf_0.ByteOccupancy = 20.05
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 30.56
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-3.Node.Switch ]
+Bandwidth = 72
+SentBytes = 35149968
+SentPackets = 1368882
+SendRate = 1.0880
+ReceivedBytes = 35149968
+ReceivedPackets = 1368882
+ReceiveRate = 1.0880
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 16.96
+in_buf_0.Utilization = 0.01
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 16.98
+in_buf_1.Utilization = 0.01
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 7.90
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.90
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 30.56
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 26.85
+out_buf_0.Utilization = 0.02
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 27.43
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 58.69
+out_buf_2.Utilization = 0.05
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 61.55
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 16.85
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-cpu-l1-l2-4 ]
+Transfers = 1353718
+AverageMessageSize = 24.91
+TransferredBytes = 33714544
+AverageLatency = 4.0057
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-4.Link.link_mod-cpu-dl1-8_Switch ]
+Name = Switch<->mod-cpu-dl1-8
+SourceBuffers = mod-cpu-dl1-8:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 326489
+TransferredBytes = 6065544
+BusyCycles = 326489
+BytesPerCycle = 0.1878
+Utilization = 0.0026
+
+[ Network.net-cpu-l1-l2-4.Link.link_Switch_mod-cpu-dl1-8 ]
+Name = Switch<->mod-cpu-dl1-8
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-8:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 326489
+TransferredBytes = 10032968
+BusyCycles = 326489
+BytesPerCycle = 0.3106
+Utilization = 0.0043
+
+[ Network.net-cpu-l1-l2-4.Link.link_mod-cpu-dl1-9_Switch ]
+Name = Switch<->mod-cpu-dl1-9
+SourceBuffers = mod-cpu-dl1-9:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 338495
+TransferredBytes = 6326072
+BusyCycles = 338495
+BytesPerCycle = 0.1958
+Utilization = 0.0027
+
+[ Network.net-cpu-l1-l2-4.Link.link_Switch_mod-cpu-dl1-9 ]
+Name = Switch<->mod-cpu-dl1-9
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-9:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 338495
+TransferredBytes = 10638520
+BusyCycles = 338495
+BytesPerCycle = 0.3293
+Utilization = 0.0046
+
+[ Network.net-cpu-l1-l2-4.Link.link_mod-cpu-il1-8_Switch ]
+Name = Switch<->mod-cpu-il1-8
+SourceBuffers = mod-cpu-il1-8:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 5942
+TransferredBytes = 47536
+BusyCycles = 5942
+BytesPerCycle = 0.0015
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-4.Link.link_Switch_mod-cpu-il1-8 ]
+Name = Switch<->mod-cpu-il1-8
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-8:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 5942
+TransferredBytes = 279600
+BusyCycles = 5942
+BytesPerCycle = 0.0087
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-4.Link.link_mod-cpu-il1-9_Switch ]
+Name = Switch<->mod-cpu-il1-9
+SourceBuffers = mod-cpu-il1-9:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 5933
+TransferredBytes = 47464
+BusyCycles = 5933
+BytesPerCycle = 0.0015
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-4.Link.link_Switch_mod-cpu-il1-9 ]
+Name = Switch<->mod-cpu-il1-9
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-9:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 5933
+TransferredBytes = 276840
+BusyCycles = 5933
+BytesPerCycle = 0.0086
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-4.Link.link_mod-cpu-l2-4_Switch ]
+Name = Switch<->mod-cpu-l2-4
+SourceBuffers = mod-cpu-l2-4:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 676859
+TransferredBytes = 21227928
+BusyCycles = 676859
+BytesPerCycle = 0.6571
+Utilization = 0.0091
+
+[ Network.net-cpu-l1-l2-4.Link.link_Switch_mod-cpu-l2-4 ]
+Name = Switch<->mod-cpu-l2-4
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-4:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 676859
+TransferredBytes = 12486616
+BusyCycles = 676859
+BytesPerCycle = 0.3865
+Utilization = 0.0054
+
+[ Network.net-cpu-l1-l2-4.Node.mod-cpu-dl1-8 ]
+SentBytes = 6065544
+SentPackets = 326489
+SendRate = 0.1878
+ReceivedBytes = 10032968
+ReceivedPackets = 326489
+ReceiveRate = 0.3106
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 26.47
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.25
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-4.Node.mod-cpu-dl1-9 ]
+SentBytes = 6326072
+SentPackets = 338495
+SendRate = 0.1958
+ReceivedBytes = 10638520
+ReceivedPackets = 338495
+ReceiveRate = 0.3293
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.53
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.52
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-4.Node.mod-cpu-il1-8 ]
+SentBytes = 47536
+SentPackets = 5942
+SendRate = 0.0015
+ReceivedBytes = 279600
+ReceivedPackets = 5942
+ReceiveRate = 0.0087
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.05
+in_buf_0.ByteOccupancy = 62.08
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-4.Node.mod-cpu-il1-9 ]
+SentBytes = 47464
+SentPackets = 5933
+SendRate = 0.0015
+ReceivedBytes = 276840
+ReceivedPackets = 5933
+ReceiveRate = 0.0086
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.06
+in_buf_0.ByteOccupancy = 62.88
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-4.Node.mod-cpu-l2-4 ]
+SentBytes = 21227928
+SentPackets = 676859
+SendRate = 0.6571
+ReceivedBytes = 12486616
+ReceivedPackets = 676859
+ReceiveRate = 0.3865
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.11
+in_buf_0.ByteOccupancy = 18.94
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 29.50
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-4.Node.Switch ]
+Bandwidth = 72
+SentBytes = 33714544
+SentPackets = 1353718
+SendRate = 1.0436
+ReceivedBytes = 33714544
+ReceivedPackets = 1353718
+ReceiveRate = 1.0436
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 16.25
+in_buf_0.Utilization = 0.01
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 16.52
+in_buf_1.Utilization = 0.01
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 7.90
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.90
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 29.50
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 25.75
+out_buf_0.Utilization = 0.02
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 26.97
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 58.62
+out_buf_2.Utilization = 0.05
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 58.41
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 15.95
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-cpu-l1-l2-5 ]
+Transfers = 1408604
+AverageMessageSize = 25.13
+TransferredBytes = 35397152
+AverageLatency = 4.0062
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-5.Link.link_mod-cpu-dl1-10_Switch ]
+Name = Switch<->mod-cpu-dl1-10
+SourceBuffers = mod-cpu-dl1-10:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 321616
+TransferredBytes = 5582656
+BusyCycles = 321616
+BytesPerCycle = 0.1728
+Utilization = 0.0024
+
+[ Network.net-cpu-l1-l2-5.Link.link_Switch_mod-cpu-dl1-10 ]
+Name = Switch<->mod-cpu-dl1-10
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-10:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 321616
+TransferredBytes = 9950592
+BusyCycles = 321616
+BytesPerCycle = 0.3080
+Utilization = 0.0043
+
+[ Network.net-cpu-l1-l2-5.Link.link_mod-cpu-dl1-11_Switch ]
+Name = Switch<->mod-cpu-dl1-11
+SourceBuffers = mod-cpu-dl1-11:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 371170
+TransferredBytes = 6859984
+BusyCycles = 371170
+BytesPerCycle = 0.2123
+Utilization = 0.0029
+
+[ Network.net-cpu-l1-l2-5.Link.link_Switch_mod-cpu-dl1-11 ]
+Name = Switch<->mod-cpu-dl1-11
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-11:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 371170
+TransferredBytes = 12373136
+BusyCycles = 371170
+BytesPerCycle = 0.3830
+Utilization = 0.0053
+
+[ Network.net-cpu-l1-l2-5.Link.link_mod-cpu-il1-10_Switch ]
+Name = Switch<->mod-cpu-il1-10
+SourceBuffers = mod-cpu-il1-10:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 5258
+TransferredBytes = 42064
+BusyCycles = 5258
+BytesPerCycle = 0.0013
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-5.Link.link_Switch_mod-cpu-il1-10 ]
+Name = Switch<->mod-cpu-il1-10
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-10:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 5258
+TransferredBytes = 253648
+BusyCycles = 5258
+BytesPerCycle = 0.0079
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-5.Link.link_mod-cpu-il1-11_Switch ]
+Name = Switch<->mod-cpu-il1-11
+SourceBuffers = mod-cpu-il1-11:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 6258
+TransferredBytes = 50064
+BusyCycles = 6258
+BytesPerCycle = 0.0015
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-5.Link.link_Switch_mod-cpu-il1-11 ]
+Name = Switch<->mod-cpu-il1-11
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-11:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 6258
+TransferredBytes = 285008
+BusyCycles = 6258
+BytesPerCycle = 0.0088
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-5.Link.link_mod-cpu-l2-5_Switch ]
+Name = Switch<->mod-cpu-l2-5
+SourceBuffers = mod-cpu-l2-5:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 704302
+TransferredBytes = 22862384
+BusyCycles = 704302
+BytesPerCycle = 0.7077
+Utilization = 0.0098
+
+[ Network.net-cpu-l1-l2-5.Link.link_Switch_mod-cpu-l2-5 ]
+Name = Switch<->mod-cpu-l2-5
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-5:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 704302
+TransferredBytes = 12534768
+BusyCycles = 704302
+BytesPerCycle = 0.3880
+Utilization = 0.0054
+
+[ Network.net-cpu-l1-l2-5.Node.mod-cpu-dl1-10 ]
+SentBytes = 5582656
+SentPackets = 321616
+SendRate = 0.1728
+ReceivedBytes = 9950592
+ReceivedPackets = 321616
+ReceiveRate = 0.3080
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.01
+in_buf_0.ByteOccupancy = 26.79
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.29
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-5.Node.mod-cpu-dl1-11 ]
+SentBytes = 6859984
+SentPackets = 371170
+SendRate = 0.2123
+ReceivedBytes = 12373136
+ReceivedPackets = 371170
+ReceiveRate = 0.3830
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.88
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.37
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-5.Node.mod-cpu-il1-10 ]
+SentBytes = 42064
+SentPackets = 5258
+SendRate = 0.0013
+ReceivedBytes = 253648
+ReceivedPackets = 5258
+ReceiveRate = 0.0079
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 55.86
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-5.Node.mod-cpu-il1-11 ]
+SentBytes = 50064
+SentPackets = 6258
+SendRate = 0.0015
+ReceivedBytes = 285008
+ReceivedPackets = 6258
+ReceiveRate = 0.0088
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.05
+in_buf_0.ByteOccupancy = 59.47
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-5.Node.mod-cpu-l2-5 ]
+SentBytes = 22862384
+SentPackets = 704302
+SendRate = 0.7077
+ReceivedBytes = 12534768
+ReceivedPackets = 704302
+ReceiveRate = 0.3880
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.11
+in_buf_0.ByteOccupancy = 19.24
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 30.22
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-5.Node.Switch ]
+Bandwidth = 72
+SentBytes = 35397152
+SentPackets = 1408604
+SendRate = 1.0957
+ReceivedBytes = 35397152
+ReceivedPackets = 1408604
+ReceiveRate = 1.0957
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 16.30
+in_buf_0.Utilization = 0.01
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 16.37
+in_buf_1.Utilization = 0.01
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 7.90
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.90
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 30.22
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 26.28
+out_buf_0.Utilization = 0.02
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 27.27
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 54.31
+out_buf_2.Utilization = 0.05
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 55.95
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 16.30
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-cpu-l1-l2-6 ]
+Transfers = 1425038
+AverageMessageSize = 26.49
+TransferredBytes = 37754736
+AverageLatency = 4.0066
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-6.Link.link_mod-cpu-dl1-12_Switch ]
+Name = Switch<->mod-cpu-dl1-12
+SourceBuffers = mod-cpu-dl1-12:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 342564
+TransferredBytes = 6595232
+BusyCycles = 342564
+BytesPerCycle = 0.2041
+Utilization = 0.0028
+
+[ Network.net-cpu-l1-l2-6.Link.link_Switch_mod-cpu-dl1-12 ]
+Name = Switch<->mod-cpu-dl1-12
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-12:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 342564
+TransferredBytes = 11420960
+BusyCycles = 342564
+BytesPerCycle = 0.3535
+Utilization = 0.0049
+
+[ Network.net-cpu-l1-l2-6.Link.link_mod-cpu-dl1-13_Switch ]
+Name = Switch<->mod-cpu-dl1-13
+SourceBuffers = mod-cpu-dl1-13:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 358770
+TransferredBytes = 6913104
+BusyCycles = 358770
+BytesPerCycle = 0.2140
+Utilization = 0.0030
+
+[ Network.net-cpu-l1-l2-6.Link.link_Switch_mod-cpu-dl1-13 ]
+Name = Switch<->mod-cpu-dl1-13
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-13:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 358770
+TransferredBytes = 12152592
+BusyCycles = 358770
+BytesPerCycle = 0.3762
+Utilization = 0.0052
+
+[ Network.net-cpu-l1-l2-6.Link.link_mod-cpu-il1-12_Switch ]
+Name = Switch<->mod-cpu-il1-12
+SourceBuffers = mod-cpu-il1-12:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 5106
+TransferredBytes = 40848
+BusyCycles = 5106
+BytesPerCycle = 0.0013
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-6.Link.link_Switch_mod-cpu-il1-12 ]
+Name = Switch<->mod-cpu-il1-12
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-12:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 5106
+TransferredBytes = 263504
+BusyCycles = 5106
+BytesPerCycle = 0.0082
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-6.Link.link_mod-cpu-il1-13_Switch ]
+Name = Switch<->mod-cpu-il1-13
+SourceBuffers = mod-cpu-il1-13:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 6079
+TransferredBytes = 48632
+BusyCycles = 6079
+BytesPerCycle = 0.0015
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-6.Link.link_Switch_mod-cpu-il1-13 ]
+Name = Switch<->mod-cpu-il1-13
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-13:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 6079
+TransferredBytes = 319864
+BusyCycles = 6079
+BytesPerCycle = 0.0099
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-6.Link.link_mod-cpu-l2-6_Switch ]
+Name = Switch<->mod-cpu-l2-6
+SourceBuffers = mod-cpu-l2-6:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 712519
+TransferredBytes = 24156920
+BusyCycles = 712519
+BytesPerCycle = 0.7477
+Utilization = 0.0104
+
+[ Network.net-cpu-l1-l2-6.Link.link_Switch_mod-cpu-l2-6 ]
+Name = Switch<->mod-cpu-l2-6
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-6:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 712519
+TransferredBytes = 13597816
+BusyCycles = 712519
+BytesPerCycle = 0.4209
+Utilization = 0.0058
+
+[ Network.net-cpu-l1-l2-6.Node.mod-cpu-dl1-12 ]
+SentBytes = 6595232
+SentPackets = 342564
+SendRate = 0.2041
+ReceivedBytes = 11420960
+ReceivedPackets = 342564
+ReceiveRate = 0.3535
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.40
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 16.39
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-6.Node.mod-cpu-dl1-13 ]
+SentBytes = 6913104
+SentPackets = 358770
+SendRate = 0.2140
+ReceivedBytes = 12152592
+ReceivedPackets = 358770
+ReceiveRate = 0.3762
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.86
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 17.11
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-6.Node.mod-cpu-il1-12 ]
+SentBytes = 40848
+SentPackets = 5106
+SendRate = 0.0013
+ReceivedBytes = 263504
+ReceivedPackets = 5106
+ReceiveRate = 0.0082
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.03
+in_buf_0.ByteOccupancy = 55.21
+in_buf_0.Utilization = 0.05
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-6.Node.mod-cpu-il1-13 ]
+SentBytes = 48632
+SentPackets = 6079
+SendRate = 0.0015
+ReceivedBytes = 319864
+ReceivedPackets = 6079
+ReceiveRate = 0.0099
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.11
+in_buf_0.ByteOccupancy = 65.38
+in_buf_0.Utilization = 0.06
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-6.Node.mod-cpu-l2-6 ]
+SentBytes = 24156920
+SentPackets = 712519
+SendRate = 0.7477
+ReceivedBytes = 13597816
+ReceivedPackets = 712519
+ReceiveRate = 0.4209
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.11
+in_buf_0.ByteOccupancy = 20.07
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 30.63
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-6.Node.Switch ]
+Bandwidth = 72
+SentBytes = 37754736
+SentPackets = 1425038
+SendRate = 1.1687
+ReceivedBytes = 37754736
+ReceivedPackets = 1425038
+ReceiveRate = 1.1687
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 16.39
+in_buf_0.Utilization = 0.01
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 17.11
+in_buf_1.Utilization = 0.01
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 7.90
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.90
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 30.63
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 26.85
+out_buf_0.Utilization = 0.02
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 27.22
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 52.81
+out_buf_2.Utilization = 0.05
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 57.90
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 16.88
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-cpu-l1-l2-7 ]
+Transfers = 1478418
+AverageMessageSize = 25.76
+TransferredBytes = 38083088
+AverageLatency = 4.0062
+Cycles = 32306242
+
+[ Network.net-cpu-l1-l2-7.Link.link_mod-cpu-dl1-14_Switch ]
+Name = Switch<->mod-cpu-dl1-14
+SourceBuffers = mod-cpu-dl1-14:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 326772
+TransferredBytes = 5893600
+BusyCycles = 326772
+BytesPerCycle = 0.1824
+Utilization = 0.0025
+
+[ Network.net-cpu-l1-l2-7.Link.link_Switch_mod-cpu-dl1-14 ]
+Name = Switch<->mod-cpu-dl1-14
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-cpu-dl1-14:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 326772
+TransferredBytes = 10036256
+BusyCycles = 326772
+BytesPerCycle = 0.3107
+Utilization = 0.0043
+
+[ Network.net-cpu-l1-l2-7.Link.link_mod-cpu-dl1-15_Switch ]
+Name = Switch<->mod-cpu-dl1-15
+SourceBuffers = mod-cpu-dl1-15:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 398509
+TransferredBytes = 7324200
+BusyCycles = 398509
+BytesPerCycle = 0.2267
+Utilization = 0.0031
+
+[ Network.net-cpu-l1-l2-7.Link.link_Switch_mod-cpu-dl1-15 ]
+Name = Switch<->mod-cpu-dl1-15
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-cpu-dl1-15:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 398509
+TransferredBytes = 14037288
+BusyCycles = 398509
+BytesPerCycle = 0.4345
+Utilization = 0.0060
+
+[ Network.net-cpu-l1-l2-7.Link.link_mod-cpu-il1-14_Switch ]
+Name = Switch<->mod-cpu-il1-14
+SourceBuffers = mod-cpu-il1-14:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 6676
+TransferredBytes = 53408
+BusyCycles = 6676
+BytesPerCycle = 0.0017
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-7.Link.link_Switch_mod-cpu-il1-14 ]
+Name = Switch<->mod-cpu-il1-14
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-cpu-il1-14:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 6676
+TransferredBytes = 320672
+BusyCycles = 6676
+BytesPerCycle = 0.0099
+Utilization = 0.0001
+
+[ Network.net-cpu-l1-l2-7.Link.link_mod-cpu-il1-15_Switch ]
+Name = Switch<->mod-cpu-il1-15
+SourceBuffers = mod-cpu-il1-15:out_buf_0 
+DestinationBuffers = Switch:in_buf_3 
+Bandwidth = 72
+TransferredPackets = 7252
+TransferredBytes = 58016
+BusyCycles = 7252
+BytesPerCycle = 0.0018
+Utilization = 0.0000
+
+[ Network.net-cpu-l1-l2-7.Link.link_Switch_mod-cpu-il1-15 ]
+Name = Switch<->mod-cpu-il1-15
+SourceBuffers = Switch:out_buf_3 
+DestinationBuffers = mod-cpu-il1-15:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 7252
+TransferredBytes = 359648
+BusyCycles = 7252
+BytesPerCycle = 0.0111
+Utilization = 0.0002
+
+[ Network.net-cpu-l1-l2-7.Link.link_mod-cpu-l2-7_Switch ]
+Name = Switch<->mod-cpu-l2-7
+SourceBuffers = mod-cpu-l2-7:out_buf_0 
+DestinationBuffers = Switch:in_buf_4 
+Bandwidth = 72
+TransferredPackets = 739209
+TransferredBytes = 24753864
+BusyCycles = 739209
+BytesPerCycle = 0.7662
+Utilization = 0.0106
+
+[ Network.net-cpu-l1-l2-7.Link.link_Switch_mod-cpu-l2-7 ]
+Name = Switch<->mod-cpu-l2-7
+SourceBuffers = Switch:out_buf_4 
+DestinationBuffers = mod-cpu-l2-7:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 739209
+TransferredBytes = 13329224
+BusyCycles = 739209
+BytesPerCycle = 0.4126
+Utilization = 0.0057
+
+[ Network.net-cpu-l1-l2-7.Node.mod-cpu-dl1-14 ]
+SentBytes = 5893600
+SentPackets = 326772
+SendRate = 0.1824
+ReceivedBytes = 10036256
+ReceivedPackets = 326772
+ReceiveRate = 0.3107
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 27.28
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 15.99
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-7.Node.mod-cpu-dl1-15 ]
+SentBytes = 7324200
+SentPackets = 398509
+SendRate = 0.2267
+ReceivedBytes = 14037288
+ReceivedPackets = 398509
+ReceiveRate = 0.4345
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.02
+in_buf_0.ByteOccupancy = 29.17
+in_buf_0.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 17.68
+out_buf_0.Utilization = 0.02
+
+[ Network.net-cpu-l1-l2-7.Node.mod-cpu-il1-14 ]
+SentBytes = 53408
+SentPackets = 6676
+SendRate = 0.0017
+ReceivedBytes = 320672
+ReceivedPackets = 6676
+ReceiveRate = 0.0099
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.14
+in_buf_0.ByteOccupancy = 71.99
+in_buf_0.Utilization = 0.06
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.90
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-7.Node.mod-cpu-il1-15 ]
+SentBytes = 58016
+SentPackets = 7252
+SendRate = 0.0018
+ReceivedBytes = 359648
+ReceivedPackets = 7252
+ReceiveRate = 0.0111
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.11
+in_buf_0.ByteOccupancy = 69.71
+in_buf_0.Utilization = 0.06
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 7.89
+out_buf_0.Utilization = 0.01
+
+[ Network.net-cpu-l1-l2-7.Node.mod-cpu-l2-7 ]
+SentBytes = 24753864
+SentPackets = 739209
+SendRate = 0.7662
+ReceivedBytes = 13329224
+ReceivedPackets = 739209
+ReceiveRate = 0.4126
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.12
+in_buf_0.ByteOccupancy = 20.03
+in_buf_0.Utilization = 0.02
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 31.23
+out_buf_0.Utilization = 0.03
+
+[ Network.net-cpu-l1-l2-7.Node.Switch ]
+Bandwidth = 72
+SentBytes = 38083088
+SentPackets = 1478418
+SendRate = 1.1788
+ReceivedBytes = 38083088
+ReceivedPackets = 1478418
+ReceiveRate = 1.1788
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 15.99
+in_buf_0.Utilization = 0.01
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 17.68
+in_buf_1.Utilization = 0.02
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 7.90
+in_buf_2.Utilization = 0.01
+in_buf_3.size = 1152
+in_buf_3.PacketOccupancy = 0.00
+in_buf_3.ByteOccupancy = 7.89
+in_buf_3.Utilization = 0.01
+in_buf_4.size = 1152
+in_buf_4.PacketOccupancy = 0.00
+in_buf_4.ByteOccupancy = 31.23
+in_buf_4.Utilization = 0.03
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 26.69
+out_buf_0.Utilization = 0.02
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 28.55
+out_buf_1.Utilization = 0.02
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 62.13
+out_buf_2.Utilization = 0.05
+out_buf_3.size = 1152
+out_buf_3.PacketOccupancy = 0.00
+out_buf_3.ByteOccupancy = 61.97
+out_buf_3.Utilization = 0.05
+out_buf_4.size = 1152
+out_buf_4.PacketOccupancy = 0.00
+out_buf_4.ByteOccupancy = 16.78
+out_buf_4.Utilization = 0.01
+
+
+[ Network.net-gpu-l1-l2-0 ]
+Transfers = 0
+AverageMessageSize = 0.00
+TransferredBytes = 0
+AverageLatency = 0.0000
+Cycles = 32306242
+
+[ Network.net-gpu-l1-l2-0.Link.link_mod-gpu-l1-0_Switch ]
+Name = Switch<->mod-gpu-l1-0
+SourceBuffers = mod-gpu-l1-0:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-0.Link.link_Switch_mod-gpu-l1-0 ]
+Name = Switch<->mod-gpu-l1-0
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-gpu-l1-0:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-0.Link.link_mod-gpu-l1-1_Switch ]
+Name = Switch<->mod-gpu-l1-1
+SourceBuffers = mod-gpu-l1-1:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-0.Link.link_Switch_mod-gpu-l1-1 ]
+Name = Switch<->mod-gpu-l1-1
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-gpu-l1-1:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-0.Link.link_mod-gpu-l2-0_Switch ]
+Name = Switch<->mod-gpu-l2-0
+SourceBuffers = mod-gpu-l2-0:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-0.Link.link_Switch_mod-gpu-l2-0 ]
+Name = Switch<->mod-gpu-l2-0
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-gpu-l2-0:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-0.Node.mod-gpu-l1-0 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-0.Node.mod-gpu-l1-1 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-0.Node.mod-gpu-l2-0 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-0.Node.Switch ]
+Bandwidth = 72
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 0.00
+in_buf_1.Utilization = 0.00
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 0.00
+in_buf_2.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 0.00
+out_buf_1.Utilization = 0.00
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 0.00
+out_buf_2.Utilization = 0.00
+
+
+[ Network.net-gpu-l1-l2-1 ]
+Transfers = 0
+AverageMessageSize = 0.00
+TransferredBytes = 0
+AverageLatency = 0.0000
+Cycles = 32306242
+
+[ Network.net-gpu-l1-l2-1.Link.link_mod-gpu-l1-2_Switch ]
+Name = Switch<->mod-gpu-l1-2
+SourceBuffers = mod-gpu-l1-2:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-1.Link.link_Switch_mod-gpu-l1-2 ]
+Name = Switch<->mod-gpu-l1-2
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-gpu-l1-2:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-1.Link.link_mod-gpu-l1-3_Switch ]
+Name = Switch<->mod-gpu-l1-3
+SourceBuffers = mod-gpu-l1-3:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-1.Link.link_Switch_mod-gpu-l1-3 ]
+Name = Switch<->mod-gpu-l1-3
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-gpu-l1-3:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-1.Link.link_mod-gpu-l2-1_Switch ]
+Name = Switch<->mod-gpu-l2-1
+SourceBuffers = mod-gpu-l2-1:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-1.Link.link_Switch_mod-gpu-l2-1 ]
+Name = Switch<->mod-gpu-l2-1
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-gpu-l2-1:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-1.Node.mod-gpu-l1-2 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-1.Node.mod-gpu-l1-3 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-1.Node.mod-gpu-l2-1 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-1.Node.Switch ]
+Bandwidth = 72
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 0.00
+in_buf_1.Utilization = 0.00
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 0.00
+in_buf_2.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 0.00
+out_buf_1.Utilization = 0.00
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 0.00
+out_buf_2.Utilization = 0.00
+
+
+[ Network.net-gpu-l1-l2-2 ]
+Transfers = 0
+AverageMessageSize = 0.00
+TransferredBytes = 0
+AverageLatency = 0.0000
+Cycles = 32306242
+
+[ Network.net-gpu-l1-l2-2.Link.link_mod-gpu-l1-4_Switch ]
+Name = Switch<->mod-gpu-l1-4
+SourceBuffers = mod-gpu-l1-4:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-2.Link.link_Switch_mod-gpu-l1-4 ]
+Name = Switch<->mod-gpu-l1-4
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-gpu-l1-4:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-2.Link.link_mod-gpu-l1-5_Switch ]
+Name = Switch<->mod-gpu-l1-5
+SourceBuffers = mod-gpu-l1-5:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-2.Link.link_Switch_mod-gpu-l1-5 ]
+Name = Switch<->mod-gpu-l1-5
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-gpu-l1-5:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-2.Link.link_mod-gpu-l2-2_Switch ]
+Name = Switch<->mod-gpu-l2-2
+SourceBuffers = mod-gpu-l2-2:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-2.Link.link_Switch_mod-gpu-l2-2 ]
+Name = Switch<->mod-gpu-l2-2
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-gpu-l2-2:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-2.Node.mod-gpu-l1-4 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-2.Node.mod-gpu-l1-5 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-2.Node.mod-gpu-l2-2 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-2.Node.Switch ]
+Bandwidth = 72
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 0.00
+in_buf_1.Utilization = 0.00
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 0.00
+in_buf_2.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 0.00
+out_buf_1.Utilization = 0.00
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 0.00
+out_buf_2.Utilization = 0.00
+
+
+[ Network.net-gpu-l1-l2-3 ]
+Transfers = 0
+AverageMessageSize = 0.00
+TransferredBytes = 0
+AverageLatency = 0.0000
+Cycles = 32306242
+
+[ Network.net-gpu-l1-l2-3.Link.link_mod-gpu-l1-6_Switch ]
+Name = Switch<->mod-gpu-l1-6
+SourceBuffers = mod-gpu-l1-6:out_buf_0 
+DestinationBuffers = Switch:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-3.Link.link_Switch_mod-gpu-l1-6 ]
+Name = Switch<->mod-gpu-l1-6
+SourceBuffers = Switch:out_buf_0 
+DestinationBuffers = mod-gpu-l1-6:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-3.Link.link_mod-gpu-l1-7_Switch ]
+Name = Switch<->mod-gpu-l1-7
+SourceBuffers = mod-gpu-l1-7:out_buf_0 
+DestinationBuffers = Switch:in_buf_1 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-3.Link.link_Switch_mod-gpu-l1-7 ]
+Name = Switch<->mod-gpu-l1-7
+SourceBuffers = Switch:out_buf_1 
+DestinationBuffers = mod-gpu-l1-7:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-3.Link.link_mod-gpu-l2-3_Switch ]
+Name = Switch<->mod-gpu-l2-3
+SourceBuffers = mod-gpu-l2-3:out_buf_0 
+DestinationBuffers = Switch:in_buf_2 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-3.Link.link_Switch_mod-gpu-l2-3 ]
+Name = Switch<->mod-gpu-l2-3
+SourceBuffers = Switch:out_buf_2 
+DestinationBuffers = mod-gpu-l2-3:in_buf_0 
+Bandwidth = 72
+TransferredPackets = 0
+TransferredBytes = 0
+BusyCycles = 0
+BytesPerCycle = 0.0000
+Utilization = 0.0000
+
+[ Network.net-gpu-l1-l2-3.Node.mod-gpu-l1-6 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-3.Node.mod-gpu-l1-7 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-3.Node.mod-gpu-l2-3 ]
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+
+[ Network.net-gpu-l1-l2-3.Node.Switch ]
+Bandwidth = 72
+SentBytes = 0
+SentPackets = 0
+SendRate = 0.0000
+ReceivedBytes = 0
+ReceivedPackets = 0
+ReceiveRate = 0.0000
+in_buf_0.size = 1152
+in_buf_0.PacketOccupancy = 0.00
+in_buf_0.ByteOccupancy = 0.00
+in_buf_0.Utilization = 0.00
+in_buf_1.size = 1152
+in_buf_1.PacketOccupancy = 0.00
+in_buf_1.ByteOccupancy = 0.00
+in_buf_1.Utilization = 0.00
+in_buf_2.size = 1152
+in_buf_2.PacketOccupancy = 0.00
+in_buf_2.ByteOccupancy = 0.00
+in_buf_2.Utilization = 0.00
+out_buf_0.size = 1152
+out_buf_0.PacketOccupancy = 0.00
+out_buf_0.ByteOccupancy = 0.00
+out_buf_0.Utilization = 0.00
+out_buf_1.size = 1152
+out_buf_1.PacketOccupancy = 0.00
+out_buf_1.ByteOccupancy = 0.00
+out_buf_1.Utilization = 0.00
+out_buf_2.size = 1152
+out_buf_2.PacketOccupancy = 0.00
+out_buf_2.ByteOccupancy = 0.00
+out_buf_2.Utilization = 0.00
+
+
